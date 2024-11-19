@@ -1,0 +1,39 @@
+Main Objective:
+Design your tests to easily extend them to new markets (different country-specific websites). 
+For this homework, your tests should be able to run on the following shops, 
+and it should be easy to add new ones:
+https://www.ploom.co.uk/en
+https://www.ploom.pl/pl
+
+
+Test Case 1:
+Verify if it is possible to add a product to the cart.
+Test Steps:
+1. Visit the Ploom website: Ploom Website: Buy Heated Tobacco Products, Devices and Kits.
+2. Click on "Shop".
+3. Open the product page by SKU (find the element with data-sku="<>" in the DOM.
+ As a test, you can use 'ploom-x-advanced').
+4. Add the product to the cart.
+5. Check your basket count.
+6. Open the basket.
+7. Check if the product is in the basket.
+
+
+Test Case 2:
+Verify if it is possible to remove a product from the cart.
+Precondition: A product is already in the cart.
+Test Steps:
+1. Open the cart.
+2. Remove the product from the cart.
+3. Verify that the product is no longer in the cart.
+4. Check if the basket count is updated correctly.
+
+
+Test Case 3:
+Verify if there are any broken links or images on the product page.
+Test Steps:
+1. Visit the Ploom website: Ploom Website: Buy Heated Tobacco Products, Devices and Kits.
+2. Click on "Shop".
+3. Open the product page by SKU (find the element with data-sku="<>" in the DOM. As a test, you can use 'ploom-x-advanced').
+4. Check all links on the product page to ensure they are not broken.
+5. Verify that all images on the product page load correctly.
